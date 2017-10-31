@@ -1,0 +1,9 @@
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\bin\Debug\cam.exe.config
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\bin\Debug\cam.exe
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\bin\Debug\cam.pdb
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.csprojResolveAssemblyReference.cache
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.Properties.Resources.resources
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.csproj.GenerateResource.Cache
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.exe
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.pdb
+c:\users\fuyuan\documents\visual studio 2015\Projects\cam\cam\obj\Debug\cam.camForm.resources
