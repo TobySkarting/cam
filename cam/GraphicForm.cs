@@ -16,5 +16,9 @@ namespace cam
         {
             InitializeComponent();
         }
+
+        private void GraphicForm_Load(object sender, EventArgs e) {
+            G
+        }
     }
 }
