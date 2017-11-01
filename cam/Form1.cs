@@ -33,7 +33,7 @@ namespace cam
         {
             if (camNum.Text == "" || camStationNum.Text == "")
             {
-                MessageBox.Show("數值不得為空!","錯誤");
+                MessageBox.Show("數值不得為空!", "錯誤");
                 return false;
             }
             return true;
@@ -52,6 +52,14 @@ namespace cam
         {
             numChecker(e);
         }
+        private void isError(bool ans)
+        {
+            if (!ans)
+            {
+                GraphicForm GraphicForm = new GraphicForm();
+                GraphicForm.Show();
+            }
+        }
 
         private void generate_Click(object sender, EventArgs e)
         {
@@ -59,7 +67,7 @@ namespace cam
                 int camStationValue = Int32.Parse(camStationNum.Text);
                 int camValue = Int32.Parse(camNum.Text);
                 string ErrorMsg = "";
-                 
+
                 if (camStationValue > 4 || camStationValue <= 0)
                 {
                     ErrorMsg += "監視站數量範圍為 1～4 !! \n";
@@ -71,9 +79,19 @@ namespace cam
                     ErrorMsg += "監視器數量範圍為 1～9 !! \n";
                     camNum.Clear();
                 }
-                MessageBox.Show(ErrorMsg, "錯誤");
+                if (ErrorMsg != "")
+                {
+                    form1.bool ans = true;
+                    MessageBox.Show(ErrorMsg, "錯誤");
+                }
+                isError(ans);
+
             }
         }
+
+        
+        
+            
 
 
     }
