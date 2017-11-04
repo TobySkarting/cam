@@ -33,6 +33,8 @@
             this.camStationNum = new System.Windows.Forms.TextBox();
             this.camNum = new System.Windows.Forms.TextBox();
             this.generate = new System.Windows.Forms.Button();
+            this.camDisplay = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.camDisplay)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,36 +59,45 @@
             // 
             // camStationNum
             // 
-            this.camStationNum.Location = new System.Drawing.Point(181, 22);
+            this.camStationNum.Location = new System.Drawing.Point(181, 24);
             this.camStationNum.Name = "camStationNum";
-            this.camStationNum.Size = new System.Drawing.Size(100, 22);
+            this.camStationNum.Size = new System.Drawing.Size(50, 22);
             this.camStationNum.TabIndex = 2;
             this.camStationNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.camStationNum_KeyPress);
             // 
             // camNum
             // 
-            this.camNum.Location = new System.Drawing.Point(230, 55);
+            this.camNum.Location = new System.Drawing.Point(227, 58);
             this.camNum.Name = "camNum";
-            this.camNum.Size = new System.Drawing.Size(100, 22);
+            this.camNum.Size = new System.Drawing.Size(50, 22);
             this.camNum.TabIndex = 3;
             this.camNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.camNum_KeyPress);
             // 
             // generate
             // 
             this.generate.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.generate.Location = new System.Drawing.Point(17, 101);
+            this.generate.Location = new System.Drawing.Point(17, 100);
             this.generate.Name = "generate";
-            this.generate.Size = new System.Drawing.Size(313, 35);
+            this.generate.Size = new System.Drawing.Size(260, 35);
             this.generate.TabIndex = 4;
             this.generate.Text = "開始繪圖";
             this.generate.UseVisualStyleBackColor = true;
             this.generate.Click += new System.EventHandler(this.generate_Click);
             // 
+            // camDisplay
+            // 
+            this.camDisplay.Location = new System.Drawing.Point(3, 141);
+            this.camDisplay.Name = "camDisplay";
+            this.camDisplay.Size = new System.Drawing.Size(20, 15);
+            this.camDisplay.TabIndex = 5;
+            this.camDisplay.TabStop = false;
+            // 
             // camForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 156);
+            this.ClientSize = new System.Drawing.Size(291, 435);
+            this.Controls.Add(this.camDisplay);
             this.Controls.Add(this.generate);
             this.Controls.Add(this.camNum);
             this.Controls.Add(this.camStationNum);
@@ -94,6 +105,7 @@
             this.Controls.Add(this.label1);
             this.Name = "camForm";
             this.Text = "監視系統模擬";
+            ((System.ComponentModel.ISupportInitialize)(this.camDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +118,7 @@
         private System.Windows.Forms.TextBox camStationNum;
         private System.Windows.Forms.TextBox camNum;
         private System.Windows.Forms.Button generate;
+        private System.Windows.Forms.PictureBox camDisplay;
     }
 }
 
